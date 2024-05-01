@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav class="nav_bar">
+                <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                <ul class="menu-links">
+                    <span id="close-btn" class="material-symbols-outlined">close</span>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing & Ad</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="login.html" class="button">Login</a></li>
+                </ul>
+                
+                <span id="menu-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+        </header>
+
+
+        <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times"></i>
+            </div>
+        </section>
+
+        <section class="hero-section">
+            <div class="content">
+                <h1>Have Your Reservations Organized</h1>
+                <p>
+                    Create your future
+                </p>
+                <button>Register Now</button>
+            </div>
+            <!-- <div class="section-image">
+            </div> -->
+        </section>
+
+        <section class="services-section">
+            <div class="content">
+                <h1>Have Your Reservations Organized</h1>
+                <p>
+                    Create your future
+                </p>
+                <button>Register Now</button>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="left box">
+                    <h2>About us</h2>
+                    <div class="details">
+                        <p>We are here to make your life easier</p>
+                        <div class="social">
+                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            <a href="#"><span class="fab fa-twitter"></span></a>
+                            <a href="#"><span class="fab fa-instagram"></span></a>
+                            <a href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Address</h2>
+                    <div class="details">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Athens University of Economics</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">210-xxxxxx</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">abc@aueb.gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right box">
+                    <h2>Contact us</h2>
+                    <div class="details">
+                        <form action="#">
+                            <div class="email-input">
+                                <div class="text">Email *</div>
+                                <input type="email" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea rows="2" cols="25" required></textarea>
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; Matchabl | All rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            const header = document.querySelector("header");
+            const menuBtn = document.querySelector("#menu-btn");
+            const closeBtn = document.querySelector("#close-btn"); 
+
+            //Toggle mobile menu on menu button click
+            menuBtn.addEventListener("click", () => {
+                header.classList.toggle("show-mobile-menu");
+            })
+
+            //close mobile menu on close button click
+            closeBtn.addEventListener("click", () => {
+                menuBtn.click();
+            })
+        </script>
+    </body>
+
+</html>
